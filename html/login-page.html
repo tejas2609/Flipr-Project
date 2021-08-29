@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/login-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+    <div class="navbar-border">
+        <div class="navbar">
+            <div class="left-navbar">
+                <div class="sidebar-pull" onclick="openNav()"><i class="fa fa-bars"></i></div>
+                <div class="web-logo">
+                    <img src="../images/logo-01.png">
+                </div>    
+            </div>
+            <div class="right-navbar">
+                <div class="user-profile">
+                    <img src="../images/user-logo.PNG">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Login-form">    
+        <h1>It's the duty of students and work of teacher to be connected.</h1>
+        <p class="flaunt-line">So here <span><img src="../images/login-image-02.png"></span> make it easy to happen between both of you.</p>
+        <p class="wish-line">A great learning ahead.</p>
+        <div class="Login-options">
+            <button onclick="teacherLogin()">Login as a Teacher</button>
+            <button onclick="studentLogin()">Login as a Student</button>
+        </div>
+        <div class="login-form" id="login-for-teacher">
+            <form>
+                <input type="email" name="teacherEmail" id="teacherEmail" placeholder="Teacher's Email-ID"><br>
+                <input type="password" name="teachfakepassword" id="teacherPassword" placeholder="Password"><br>
+                <input type="checkbox" name="showpsw" onclick="myFunction()">Show Password<br>
+                <input type="submit" name="submitLoginFormTeacher" placeholder="Log In">
+            </form>
+            <div class="forgot-password">
+                <div class="forgot-password-link"><a href="#">Forgot Password?</a></div>
+            </div>
+            <p>Also you can sign-in with:</p>
+            <div class="more-sign-in-options">
+                <img src="../images/google-logo-removebg-preview.png">
+                <img src="../images/fb-logo-removebg-preview.png">
+            </div>
+        </div>
+        <div class="login-form" id="login-for-student">
+            <form>
+                <input type="email" name="studentEmail" id="studentEmail" placeholder="Student's Email-ID"><br>
+                <input type="password" name="teachfakepassword" id="studentPassword" placeholder="Password"><br>
+                <input type="checkbox" name="showpsw" onclick="myFunction()">Show Password<br>
+                <input type="submit" name="submitLoginFormStudent" placeholder="Log In">
+            </form>
+            <div class="forgot-password">
+                <div class="forgot-password-link"><a href="#">Forgot Password?</a></div>
+            </div>
+            <p>Also you can sign-in with:</p>
+            <div class="more-sign-in-options">
+                <img src="../images/google-logo-removebg-preview.png">
+                <img src="../images/fb-logo-removebg-preview.png">
+            </div>
+        </div>
+    </div>
+    <script src="../js/home-after-login.js"></script>
+</body>
+</html>

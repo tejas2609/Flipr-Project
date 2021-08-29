@@ -1,0 +1,183 @@
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    background: white;
+    transition: 0.5s;
+    padding-top: 60px;
+    border: 0.2px solid lightgrey;
+    border-radius: 10px;
+    z-index: 10;
+    box-shadow: 2px 5px 5px lightslategrey;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:not(:first-child):hover {
+    transform: scale(1.1);
+    background-color: rgb(202, 232, 250);
+    opacity: 1; 
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+.sidenav a:first-child:hover {
+    transform: scale(1.3); 
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+
+}
+.navbar-border{
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid lightgrey;
+}
+.navbar{
+    position: relative;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.left-navbar{
+    float: left;
+    display: flex;
+}
+.left-navbar .sidebar-pull{
+    font-size: 25px;
+    cursor: pointer;
+    color: black;
+}
+.left-navbar .web-logo{
+    width: 180px;
+    padding-left: 5%;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+}
+.left-navbar .web-logo img{
+    width: 100%;
+}
+.right-navbar{
+    display: flex;
+    float: right;
+}
+.right-navbar > div:not(:last-child){
+    padding-right: 20%;
+}
+.right-navbar .add-classroom{
+    font-size: 30px;
+}
+.right-navbar .user-profile{
+    width: 40px;
+}
+.right-navbar .user-profile img{
+    width: 100%;  
+    border-radius: 50px;
+}
+
+.Login-form{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5%;
+    border: 1px solid lightgrey;
+    width: 30%;
+    font-family: 'Quicksand', sans-serif;
+    padding: 3%;
+    border-radius: 25px;
+    box-shadow: 5px 5px lightgrey;
+}
+.Login-form h1{
+    font-size: 18px;
+}
+.Login-form .flaunt-line span img{
+    width: 10%;
+}
+.Login-form .Login-options{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+.Login-form .Login-options button{
+    margin-left: 12%;
+    padding:2% 3%;
+    background-color: #f7ecbf;
+    border: 1px solid #f7ecbf;
+}
+.Login-form .Login-options button:hover{
+    cursor: pointer;
+    background-color: #fae594;
+    border: 1px solid #fae594;
+    transition: 1s ease;
+}
+.Login-form form{
+    display: block;
+}
+.Login-form form input[type=email], .Login-form form input[type=password], .Login-form form input[type=text]{
+    width: 50%;
+    height: 30px;
+    margin-top: 4%;
+}
+.Login-form form input[type=checkbox]{
+    margin-top: 2%;
+}
+.Login-form form input[type=submit]{
+    margin-top: 3%;
+    width: 60%;
+    height: 35px;
+    background-color: rgb(140, 245, 140);
+    border: 1px solid rgb(140, 245, 140);
+    border-radius: 15px;
+}
+.Login-form form input[type=submit]:hover{
+    background-color: rgb(101, 214, 101);
+    cursor: pointer;
+    transition: 1s ease;
+}
+.login-form .forgot-password{
+    margin-top: 2%;
+    font-size: 12px;
+    margin-left: -30%;
+}
+.login-form p{
+    font-size: 12px;
+    margin-top: 4%;
+}
+.login-form .more-sign-in-options{
+    display: flex;
+    margin-left: 35%;
+    margin-top: 5%;
+}
+.login-form .more-sign-in-options img{
+    width: 20%;
+}
+@media only screen and (max-width:1000px) {
+    .Login-form{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .Login-form{
+        width: 70%;
+    }
+    .Login-form .Login-options button{
+        margin-left: 7%;
+    }
+}

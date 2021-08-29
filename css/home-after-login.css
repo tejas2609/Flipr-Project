@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+body {
+  font-family: "Lato", sans-serif;
+}
+  
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  background: white;
+  transition: 0.5s;
+  padding-top: 60px;
+  border: 0.2px solid lightgrey;
+  border-radius: 10px;
+  z-index: 10;
+  box-shadow: 2px 5px 5px lightslategrey;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:not(:first-child):hover {
+  transform: scale(1.1);
+  background-color: rgb(202, 232, 250);
+  opacity: 1; 
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+.sidenav a:first-child:hover {
+  transform: scale(1.3); 
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  
+}
+.navbar-border{
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid lightgrey;
+}
+.navbar{
+  position: relative;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+.left-navbar{
+  float: left;
+  display: flex;
+}
+.left-navbar .sidebar-pull{
+  font-size: 25px;
+  cursor: pointer;
+  color: black;
+}
+.left-navbar .web-logo{
+  width: 180px;
+  padding-left: 5%;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+  align-self: center;
+  justify-self: center;
+}
+.left-navbar .web-logo img{
+  width: 100%;
+}
+.right-navbar{
+  display: flex;
+  float: right;
+}
+.right-navbar > div:not(:last-child){
+  padding-right: 20%;
+}
+.right-navbar .add-classroom{
+  font-size: 30px;
+}
+.right-navbar .user-profile{
+  width: 100px;
+}
+.right-navbar .user-profile img{
+  width: 100%;  
+  border-radius: 50px;
+}
+.Explore{
+  position: relative;
+  margin-top: 3%;
+  margin-left: 5%;
+  display: flex;
+  width: fit-content;
+}
+.Explore .explore-heading{
+  color: lightseagreen;
+  margin-left: 1%;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  white-space: nowrap;
+}
+.Explore:hover{
+  background-color: rgb(208, 234, 250);
+  cursor: pointer;
+}
+.classroom{
+  position: relative;
+  margin-left: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 20%;
+}
+.classroom-card{
+  border: 1px solid lightgrey;
+  border-radius: 25px;
+  width: 20%;
+  margin-left: 3%;
+  margin-top: 2%;
+  font-family: 'Quicksand', sans-serif;
+}
+.classroom-card .card-head-section{
+  padding: 9% 15%;
+  border-bottom: 1px solid lightgrey;
+  background-image: url('../images/maths-card-background.jpg');
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+}
+.card-head-section .subject-name{
+  color: white;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+.classroom-card .card-mid-section{
+  display: flex;
+  height: 150px;
+}
+.classroom-card .card-mid-section .user-image{
+  width: 50%;
+}
+.classroom-card .card-mid-section .user-info{
+  padding: 10%;
+}
+.classroom-card .card-mid-section .user-info .batch-name{
+  font-size: 18px;
+}
+.classroom-card .card-mid-section .user-info .user-name{
+  font-size: 12px;
+}
+.classroom-card .card-mid-section .user-image img{
+  width: 100%; 
+  height: 150px;
+}
+.classroom-card .card-down-section{
+  border-top: 1px solid lightgrey;
+  padding: 2%;
+}
+.classroom-card .card-down-section .Uploaded-work{
+  margin-left: 80%;
+}   
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
